@@ -23,7 +23,7 @@ export const CheckListProvider = ({ children }) => {
   const cargarData = async () => {
     setLoader(true);
     const res = await fetch(
-      "https://quiet-otter-3f4f5b.netlify.app/json/detalle.json"
+      "https://checking-list.netlify.app/json/detalle.json"
     );
     const json = await res.json();
     setLoader(false);
